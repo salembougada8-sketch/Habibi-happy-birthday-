@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#321d36">
+<title>For Wiwi — A Little Book of Memories</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient"><span>♡</span><span>✦</span><span>♡</span><span>✧</span></div>
+<main class="app">
+  <header class="topbar">
+    <div class="brand">a little book <span>♡</span></div>
+    <div class="counter" id="counter">Cover</div>
+  </header>
+
+  <section class="stage" aria-label="Interactive memory book">
+    <div class="book" id="book">
+      <article class="page cover active" data-title="Cover">
+        <div class="cover-inner">
+          <div class="tiny">A BOOK MADE WITH LOVE</div>
+          <div class="cover-heart">♡</div>
+          <h1>For my<br><em>Wiwi</em></h1>
+          <p class="cover-sub">Wiem · my favourite person</p>
+          <div class="cover-rule"></div>
+          <p class="cover-bottom">turn the pages, keep the memories</p>
+          <div class="cover-hint">OPEN THE BOOK <span>→</span></div>
+        </div>
+      </article>
+
+      <article class="page paper" data-title="A note for you">
+        <div class="page-content letter">
+          <div class="eyebrow">DEAR WIWI</div>
+          <h2>A little note<br><em>for you</em></h2>
+          <div class="ornament">✦　♡　✦</div>
+          <p>Some people make ordinary days feel special just by being part of them. You are one of those people, Wiem.</p>
+          <p>I made this little book to keep a few moments close — the smiles, the little details, and the memories that deserve their own pages.</p>
+          <p>Whatever the day brings, I hope you never forget how appreciated you are.</p>
+          <div class="signature">Always cheering for you,<br><strong>your waomti ♡</strong></div>
+        </div>
+        <span class="page-no">01</span>
+      </article>
+
+      <article class="page paper" data-title="Little moments">
+        <div class="page-content">
+          <div class="eyebrow">THE LITTLE MOMENTS</div>
+          <h2>Your smile, <em>your magic</em></h2>
+          <div class="photo-pair">
+            <figure><img src="assets/photos/photo-01.jpg" alt="Wiem in a blue outfit"><figcaption>A moment worth keeping ♡</figcaption></figure>
+            <figure><img src="assets/photos/photo-02.jpg" alt="Wiem taking a mirror selfie"><figcaption>Simply unforgettable</figcaption></figure>
+          </div>
+        </div>
+        <span class="page-no">02</span>
+      </article>
+
+      <article class="page paper" data-title="More memories">
+        <div class="page-content">
+          <div class="eyebrow">A FEW MORE MEMORIES</div>
+          <h2>Little things, <em>big smiles</em></h2>
+          <div class="photo-pair">
+            <figure><img src="assets/photos/photo-03.jpg" alt="Wiem smiling"><figcaption>Keep shining, Wiwi ✨</figcaption></figure>
+            <figure><img src="assets/photos/photo-04.jpg" alt="Wiem in a mirror selfie"><figcaption>One of my favourite snapshots</figcaption></figure>
+          </div>
+        </div>
+        <span class="page-no">03</span>
+      </article>
+
+      <article class="page paper" data-title="A favourite memory">
+        <div class="page-content">
+          <div class="eyebrow">A FAVOURITE MEMORY</div>
+          <h2>Some moments <em>stay</em></h2>
+          <div class="photo-pair">
+            <figure><img src="assets/photos/photo-05.jpg" alt="A close-up portrait of Wiem"><figcaption>A lovely little moment</figcaption></figure>
+            <figure><img src="assets/photos/photo-06.jpg" alt="A shared moment together"><figcaption>A memory to treasure ♡</figcaption></figure>
+          </div>
+        </div>
+        <span class="page-no">04</span>
+      </article>
+
+      <article class="page paper" data-title="Our song">
+        <div class="page-content song-page">
+          <div class="eyebrow">PRESS PLAY WHEN YOU'RE READY</div>
+          <div class="music-disc">♫</div>
+          <h2>Our special <em>song</em></h2>
+          <p class="song-name">Halet Hob · Elissa</p>
+          <p class="song-note">A little soundtrack for this little book.</p>
+          <audio id="song" preload="metadata" controls>
+            <source src="assets/music/halet-hob.mp3" type="audio/mpeg">
+          </audio>
+          <p class="song-help" id="songHelp">The song file will be added here when you send it. For now, this page is ready for it.</p>
+          <div class="ornament">♡　✦　♡</div>
+        </div>
+        <span class="page-no">05</span>
+      </article>
+
+      <article class="page paper last-page" data-title="One last thing">
+        <div class="page-content final">
+          <div class="eyebrow">ONE LAST THING</div>
+          <div class="big-heart">♡</div>
+          <h2>Happy moments,<br><em>Wiwi.</em></h2>
+          <p>Thank you for being exactly who you are. May this year bring you gentle days, beautiful surprises, and countless reasons to smile.</p>
+          <p class="final-line">You deserve all the good things. ♡</p>
+          <div class="signature">With warmth,<br><strong>waomti</strong></div>
+        </div>
+        <span class="page-no">06</span>
+      </article>
+    </div>
+  </section>
+
+  <nav class="controls" aria-label="Book navigation">
+    <button id="prev" class="nav-btn" type="button" aria-label="Previous page">←</button>
+    <div class="progress-wrap"><div class="progress"><span id="progress"></span></div><small>SWIPE OR TAP TO TURN</small></div>
+    <button id="next" class="nav-btn" type="button" aria-label="Next page">→</button>
+  </nav>
+  <footer>made especially for <strong>Wiem</strong> <span>♡</span></footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
